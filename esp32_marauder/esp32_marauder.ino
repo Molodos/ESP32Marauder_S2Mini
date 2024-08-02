@@ -180,7 +180,7 @@ void setup()
     delay(10);
   #endif
 
-  Serial.begin(115200);
+  Serial.begin(115200, SERIAL_8N1, 3, 1);
 
   Serial.println("ESP-IDF version is: " + String(esp_get_idf_version()));
 
